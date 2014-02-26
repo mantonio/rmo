@@ -1,0 +1,337 @@
+/**
+ * 
+ * AUTHOR: Matt Antonio
+ * TITLE: RMO Final Project
+ * DESCRIPTION: Classic video game media website
+ * 
+ */
+
+/**
+ * 
+ * COLORS
+ * .rmo-orange: HEX - #fa844f, RGB - 247, 147, 30
+ * .rmo-grey: HEX - #cecece, RGB - 85, 87, 87
+ * .rmo-dark-grey: HEX - #3a3b3b, RGB - 58, 59, 59
+ * .rmo-light-grey: HEX - #f4f4f4, RGB - 238, 238, 238
+ * 
+ */
+
+/**
+ * 
+ * FONT STYLES
+ * Josefin-Sans:
+ * Thin 100, Thin 100italic
+ * Light 300, Light 300italic
+ * Normal 400, Normal 400italic
+ * Semi-Bold 600, Semi-Bold 600italic
+ * Bold 700, Bold 700italic
+ * 
+ * Michroma:
+ * Normal 400
+ * 
+ */
+
+/* 
+GENERAL CSS
+================================== */
+/*----- Reset -----*/
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, em, img, small, strong, b, u, i, dl, dt, dd, ol, ul, li, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, figcaption, footer, header, hgroup, menu, nav, section, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html, body {
+    font-size: 1px;
+    background-color: #3a3b3b;
+    color: #eee;
+    font-family: 'Josefin Sans', sans-serif; 
+    height: 100%;
+    font-weight: 100;
+}
+
+body > .wrap {
+    margin-top: 120px;
+}
+
+.wrap {
+    width: 1100px;
+    margin: 0 auto;
+    font-size: 22rem;
+    line-height: 30rem;
+}
+
+div, p, img {
+    display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.rmo-orange {
+    color: #fa844f;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Michroma', sans-serif;
+    color: #fa844f;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+}
+
+h1 {
+    font-size: 36rem;
+    line-height: 44rem;
+}
+
+h2 {
+    font-size: 30rem;
+    line-height: 38rem;
+}
+
+h3 {
+    font-size: 24rem;
+    line-height: 32rem;
+}
+
+h4 {
+    font-size:  18rem;
+    line-height: 26rem;
+}
+
+h5 {
+    font-size: 14rem;
+    line-height: 20rem;
+}
+
+h6 {
+    font-size: 12rem;
+    line-height: 18rem;
+}
+
+*:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.col img {
+    opacity: 0.6;
+    border: 3px solid transparent;
+}
+
+.col img:hover {
+    cursor: pointer;
+    opacity: 1;
+    border-color: #fa844f;
+}
+
+/* 
+HEADER / MAIN NAV
+================================== */
+header {
+    background-color: #f4f4f4;
+    border-top: 5px solid #fa844f;
+    min-height: 65px;
+    display: fixed;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    
+}
+
+nav #main-nav {
+    float: right;
+    width: 586px;
+    overflow: hidden;
+    line-height: 65px;
+}
+
+#main-nav li {
+    float: left;
+    height: inherit;
+    border-right: 1px solid #cecece;
+}
+
+#main-nav li:first-child {
+    border-left: 1px solid #cecece;
+}
+
+#main-nav li a {
+    color: #fa844f;
+    display: block;
+    font-size: 22rem;
+    padding: 0 30px;
+    font-weight: 600;
+}
+
+#main-nav li a:hover {
+    color: #eee;
+}
+
+#main-nav li:hover {
+    background-color: #fa844f;
+}
+
+#logo  {
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin-top: 8px;
+}
+
+#logo a {
+    display: block;
+    height: 50px;
+    width: 150px;
+}
+
+/*
+MAIN VIDEO
+================================== */
+#main-display {
+    /*border: 3px solid #fa844f;*/
+    width: 800px;
+    height: 450px;
+    margin: 0 auto 50px;
+}
+
+/*
+ALL-TIME FAVS
+================================== */
+.all-time {
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+.col {
+    width: 270px;
+    float: left;
+    margin-right: 145px;
+}
+
+.all-time .col:nth-child(4), #top3 .col:last-child {
+    margin-right: 0;
+}
+
+.game-title {
+    color: #fa844f;
+}
+
+.all-time h2, .all-time h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.all-time h6 {
+    margin-bottom: 20px;
+    letter-spacing: 2rem;
+}
+
+/*
+TOP 3 
+================================== */
+#top3 {
+    overflow: hidden;
+    clear: left;
+}
+
+#top3 .col figure {
+    margin-bottom: 30px;
+}
+
+/*
+FOOTER
+================================== */
+footer {
+    background-color: #f4f4f4;
+    border-top: 5px solid #fa844f;
+    overflow: hidden;
+}
+
+footer a {
+    color: #fa844f;
+    text-decoration: underline;
+}
+
+footer .footer-col a:hover {
+    color: #3a3b3b;
+    -moz-transition: none;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.footer-col-title {
+    color: #3a3b3b;
+    margin: 10px 0;
+}
+
+.footer-col {
+    float: left;
+    width: 190px;
+    margin: 15px 30px 30px 0;
+    border-right: 1px solid #cecece;
+    padding-right: 5px;
+}
+
+.footer-col:nth-child(4) {
+    border-right: none;
+}
+
+#footer-brand {
+    float: right;
+    width: 180px;
+    margin-top: 30px;
+}
+
+#social-icons {
+    float: right;
+}
+
+#footer-logo {
+    clear: right;
+    float: right;
+    margin-top: 20px;
+}
+
+#social-icons li {
+    float: left;
+    margin-right: 10px;
+}
+
+#social-icons li:last-child {
+    margin-right: 0;
+}
+
+#footer-brand #social-icons li a {
+    display: block;
+    border: 1px solid #fa844f;
+    padding: 2px 5px;
+    width: 15px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#footer-brand #social-icons li a:hover {
+    border-color: transparent;
+    background-color: #fa844f;
+    color: #f4f4f4;
+}
