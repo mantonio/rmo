@@ -10,7 +10,8 @@
         <title>RMO Final Project</title>
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/colorbox.css">
 
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
@@ -26,6 +27,7 @@
         <script src="sliderengine/jquery.js"></script>
         <script src="sliderengine/amazingslider.js"></script>
         <script src="sliderengine/initslider-1.js"></script>
+
     </head>
     <body>
         <header>
@@ -59,7 +61,7 @@
                         <li><img src="images/thumbs/smb-title-screen-tn.jpg" /></li>
                         <li><img src="images/thumbs/metroid-title-screen-tn.jpg" /></li>
                     </ul>
-                    <video preload="preload" controls="controls" src="media/metroid.ogv type="video/ogg"></video>
+                    <video preload="preload" controls="controls" src="media/metroid.ogv" type="video/ogg"></video>
                     <div class="amazingslider-engine" style="display:none;"><a href="http://amazingslider.com">jQuery Image Slideshow</a></div>
                 </div><!-- END #amazingslider-1 -->
             </div><!-- END #main-display -->
@@ -101,17 +103,23 @@
                 <div class="col">
                     <h4>NES / SNES</h4>
                     <figure>
-                        <img src="http://placehold.it/250x150">
+                        <a href="gallery/smw-big.jpg"> 
+                            <img src="gallery/smw-title-screen.jpg" alt="Super Mario World Title Screen" title="Super Mario World">
+                        </a>
                         <figcaption>Super Mario World</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="http://placehold.it/250x150">
+                        <a href="gallery/blaster-master-big.jpg">
+                            <img src="gallery/blaster-master-title-screen.jpg" alt="Blaster Master Title Screen" title="Blaster Master">
+                        </a>
                         <figcaption>Blaster Master</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="http://placehold.it/250x150">
+                        <a href="gallery/zelda-big.jpg">
+                            <img src="gallery/zelda-title-screen.jpg" alt="The Legend of Zelda Title Screen" title="The Legend of Zelda">
+                        </a>
                         <figcaption>The Legend of Zelda</figcaption>
                     </figure>
                 </div><!-- END .col -->
@@ -119,17 +127,23 @@
                 <div class="col">
                     <h4>Sega Genesis</h4>
                     <figure>
-                        <img src="http://placehold.it/250x150">
+                        <a href="gallery/altered-beast-big.jpg">
+                            <img src="gallery/altered-beast-title-screen.jpg" alt="Altered Beast Title Screen" title="Altered Beast">
+                        </a>
                         <figcaption>Altered Beast</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="http://placehold.it/250x150">
+                        <a href="gallery/sonic-big.jpg">
+                            <img src="gallery/sonic-title-screen.jpg" alt="Sonic the Hedgehog Title Screen" title="Sonic the Hedgehog">
+                        </a>
                         <figcaption>Sonic the Hedgehog</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="http://placehold.it/250x150">
+                        <a href="gallery/ghouls-n-ghosts-big.jpg">
+                            <img src="gallery/ghouls-n-ghosts-title-screen.jpg" alt="Ghouls n&#39; Ghosts Title Screen" title="Ghouls n&#39; Ghosts">
+                        </a>
                         <figcaption>Ghouls n' Ghosts</figcaption>
                     </figure>
                 </div><!-- END .col -->
@@ -137,20 +151,26 @@
                 <div class="col">
                     <h4>Playstation</h4>
                     <figure>
-                        <img src="http://placehold.it/250x150">
+                        <a href="gallery/metal-gear-big.jpg">
+                            <img src="gallery/metal-gear-solid-title-screen.jpg" alt="Metal Gear Solid Title Screen" title="Metal Gear Solid">
+                        </a>
                         <figcaption>Metal Gear Solid</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="http://placehold.it/250x150">
-                        <figcaption>Tekken 3</figcaption>
+                        <a href="gallery/tekken-big.jpg">
+                            <img src="gallery/tekken-title-screen.jpg" alt="Tekken Title Screen" title="Tekken for PS1">
+                        </a>
+                        <figcaption>Tekken</figcaption>
                     </figure>
 
-                    <figure>   
-                        <img src="http://placehold.it/250x150">
+                    <figure>
+                        <a href="gallery/final-fantasy-big.jpg">   
+                            <img src="gallery/final-fantasy-7-title-screen.jpg" alt="Final Fantasy 7 Title Screen" title="Final Fantasy 7 for PS1">
+                        </a>
                         <figcaption>Final Fantasy 7</figcaption>
                     </figure>
-                </div>
+                </div><!-- END .col -->
 
             </div><!-- END #top3 -->
         </div><!-- END .wrap -->
@@ -215,5 +235,6 @@
         <script src="js/site.js" type="text/javascript"></script>
         <!-- <script src="js/jquery-2.1.0.min.js" type="text/javascript"></script> -->
         <script src="js/modernizr.js" type="text/javascript"></script>
+        
     </body>
 </html>

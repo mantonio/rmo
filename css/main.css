@@ -83,11 +83,16 @@ table {
 
 a {
     text-decoration: none;
+    color: #fa844f;
 }
 
 a:hover, a .game-title:hover {
     color: #eee;
     text-decoration: underline;
+}
+
+a:visited {
+    color: #fa844f;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -143,6 +148,7 @@ h6 {
     opacity: 1;
     border-color: #fa844f;
 }
+
 
 /*
 BUTTONS
@@ -247,6 +253,48 @@ MAIN VIDEO
     margin: 0 auto 50px;
 }
 
+#main-desc {
+    margin-bottom: 50px;
+}
+
+/*
+DOWNLOADS
+================================== */
+#download {
+    margin-bottom: 50px;
+}
+
+#download table th {
+    background: #fa844f;
+    color: #f4f4f4;
+    padding: 3px 10px;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+#download table tbody {
+    border: 1px solid #fa844f;
+}
+
+#download table td {
+    padding: 15px !important;
+}
+
+#download table tr:nth-child(even) {
+    background-color: rgba(244,244,244,0.5);
+}
+
+#download table tr:nth-child(even) a {
+    color: #f4f4f4;
+}
+
+#download table tr:nth-child(even) a:hover {
+    color: #3a3b3b;
+}
+
+
+
 /*
 ALL-TIME FAVS
 ================================== */
@@ -261,7 +309,7 @@ ALL-TIME FAVS
     margin-right: 145px;
 }
 
-.all-time .col:nth-child(4), #top3 .col:last-child {
+.all-time .col:nth-child(4), #top3 .col:last-child, #gallery .col:last-child {
     margin-right: 0;
 }
 
@@ -284,14 +332,14 @@ ALL-TIME FAVS
 }
 
 /*
-TOP 3 
+TOP 3 / GALLERY
 ================================== */
-#top3 {
+#top3, #gallery {
     overflow: hidden;
     clear: left;
 }
 
-#top3 .col figure {
+#top3 .col figure, #gallery .col figure {
     margin-bottom: 30px;
 }
 
