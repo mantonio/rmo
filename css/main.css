@@ -144,6 +144,33 @@ h6 {
     border-color: #fa844f;
 }
 
+/*
+BUTTONS
+================================== */
+.rmore {
+    display: block;
+    background: #fa844f;
+    color: #f4f4f4;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    font-size: 24rem;
+    border-bottom: 4px solid #bf653f;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #e8930c;
+    box-shadow: inset 0 -2px #e8930c;
+}
+
+.rmore:hover {
+    background: #ef7b2d;
+    text-decoration: none;
+}
+
+.rmore .rmore-txt, .col .rmore-txt {
+    font-variant: small-caps;
+}
+
 /* 
 HEADER / MAIN NAV
 ================================== */
