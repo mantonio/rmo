@@ -85,6 +85,11 @@ a {
     text-decoration: none;
 }
 
+a:hover, a .game-title:hover {
+    color: #eee;
+    text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Michroma', sans-serif;
     color: #fa844f;
@@ -185,6 +190,7 @@ nav #main-nav {
 
 #main-nav li a:hover {
     color: #eee;
+    text-decoration: none;
 }
 
 #main-nav li:hover {
@@ -244,6 +250,10 @@ ALL-TIME FAVS
 .all-time h6 {
     margin-bottom: 20px;
     letter-spacing: 2rem;
+}
+
+.all-time img {
+    margin-bottom: 10px;
 }
 
 /*
