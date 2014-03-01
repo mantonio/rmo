@@ -293,6 +293,10 @@ DOWNLOADS
     color: #f4f4f4;
 }
 
+#download table tr:nth-child(3) {
+    background-color: rgba(244,244,244,0.8);
+}
+
 #download table tr:nth-child(even) a:hover {
     color: #3a3b3b;
 }
