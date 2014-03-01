@@ -305,8 +305,12 @@ DOWNLOADS
     color: #3a3b3b;
 }
 
-#download table tr:nth-child(even) a:hover {
+#download table tr:nth-child(3) a:hover {
     color: #fa844f;
+}
+
+#download table tr:nth-child(even) a:hover {
+    color: #3a3b3b;
 }
 
 
